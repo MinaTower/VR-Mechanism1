@@ -16,22 +16,23 @@ public class CubeAct : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    /*void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.Mouse0))//Input.GetKey(KeyCode.Mouse0)
-        {
-            if (Cube.activeInHierarchy)
-            {
-                Cube.SetActive(false);
-            }
-            else
-            {
-                Cube.SetActive(true);
-            }
-        };
-    }
-    /*public void OnClick()
+        //if (Input.GetKey(KeyCode.Mouse0))//Input.GetKey(KeyCode.Mouse0)
+        //{
+        //    if (Cube.activeInHierarchy)
+        //    {
+        //        Cube.SetActive(false);
+        //    }
+        //    else
+        //    {
+        //        Cube.SetActive(true);
+        //    }
+        //};
+    }*/
+    public void OnClick()
     {
+        Debug.Log('2');
         if (Cube.activeInHierarchy)
         {
             Cube.SetActive(false);
@@ -40,5 +41,5 @@ public class CubeAct : MonoBehaviour
         {
             Cube.SetActive(true);
         }
-    }*/
+    }
 }
